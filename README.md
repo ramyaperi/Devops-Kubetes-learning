@@ -9,6 +9,7 @@ This repository is associated with Cloud DevOps ND - Course 04 - Microservices a
 ### A. Dependencies
 #### A.1. Python
 [Download and install the python](https://www.python.org/downloads/). 
+source ~/.devops/Scripts/activate
 
 #### A.2. Docker Desktop
 You would require you to install Docker Desktop to create containers for individual microservices. Refer the following links for instructions 
