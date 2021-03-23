@@ -9,7 +9,6 @@ This repository is associated with Cloud DevOps ND - Course 04 - Microservices a
 ### A. Dependencies
 #### A.1. Python
 [Download and install the python](https://www.python.org/downloads/). 
-source ~/.devops/Scripts/activate
 
 #### A.2. Docker Desktop
 You would require you to install Docker Desktop to create containers for individual microservices. Refer the following links for instructions 
@@ -66,8 +65,9 @@ cd DevOps_Microservices/project-ml-microservice-kubernetes
 
 2. Create (and activate) a new environment, named `.devops` with Python 3. If prompted to proceed with the install `(Proceed [y]/n)` type y.
 ```bash
-python3 -m venv ~/.devops
-source ~/.devops/bin/activate
+on windows like below instead
+py3 -m venv ~/.devops
+source ~/.devops/Scripts/activate
 ```
 
 At this point your command line should look something like: `(.devops) <User>:project-ml-microservice-kubernetes<user>$`. The `(.devops)` indicates that your environment has been activated, and you can proceed with further package installations.
@@ -121,3 +121,24 @@ Your code has been rated at 10.00/10
 
 That's about it! When working with kubernetes, you may need to install some other libraries, but these instructions will set you up with an environment that can build and deploy Docker containers.
 
+3.logging changes
+logging chnages are done and the output is saved in 
+project-ml-microservice-kubernetes/docker_out.txt
+
+4.Upload the Docker Image
+run the file
+./upload_docker.sh
+
+5.Configure Kubernetes to Run Locally
+started minikube 
+
+6: Deploy with Kubernetes and Save Output Logs
+run the file 
+./run_kubernetes.sh
+
+7. stop the cluster
+minikube stop 
+
+
+8: CircleCI Integration
+configure and run circle ci integration
