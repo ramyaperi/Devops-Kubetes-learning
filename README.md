@@ -1,4 +1,5 @@
-<include a CircleCI status badge, here>
+[![CircleCI](https://circleci.com/gh/ramyaperi/Devops-Kubetes-learning.svg?style=svg)](https://app.circleci.com/pipelines/github/ramyaperi/Devops-Kubetes-learning)
+
 
 ## Project Overview
 
