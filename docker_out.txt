@@ -1,0 +1,174 @@
+$ ./run_docker.sh
+[+] Building 35.5s (10/10) FINISHED
+ => [internal] load build definition from Dockerfile                                                                                                                                                                               0.0s
+ => => transferring dockerfile: 32B                                                                                                                                                                                                0.0s
+ => [internal] load .dockerignore                                                                                                                                                                                                  0.0s
+ => => transferring context: 2B                                                                                                                                                                                                    0.0s
+ => [internal] load metadata for docker.io/library/python:3.7.3-stretch                                                                                                                                                            6.2s
+ => [auth] library/python:pull token for registry-1.docker.io                                                                                                                                                                      0.0s
+ => [internal] load build context                                                                                                                                                                                                  0.1s
+ => => transferring context: 39.28kB                                                                                                                                                                                               0.1s
+ => [1/4] FROM docker.io/library/python:3.7.3-stretch@sha256:205cafadbb7f0c48f2a6d655eb100a9675aa85e6e73958860f488406cce09779                                                                                                      0.0s
+ => CACHED [2/4] WORKDIR /app                                                                                                                                                                                                      0.0s
+ => [3/4] COPY . app.py /app/                                                                                                                                                                                                      0.5s
+ => [4/4] RUN pip install --upgrade pip &&    pip install --trusted-host pypi.python.org -r requirements.txt                                                                                                                      26.3s
+ => exporting to image                                                                                                                                                                                                             2.3s
+ => => exporting layers                                                                                                                                                                                                            2.2s
+ => => writing image sha256:436de2b7dfee83af95a5aa064b9ce3cde7e72deb8b0130c78b130a9f915bd448                                                                                                                                       0.0s
+ => => naming to docker.io/library/devops                                                                                                                                                                                          0.0s
+REPOSITORY                           TAG                                                     IMAGE ID       CREATED          SIZE
+devops                               latest                                                  436de2b7dfee   7 seconds ago    1.34GB
+<none>                               <none>                                                  71eeacf2de19   4 minutes ago    1.34GB
+<none>                               <none>                                                  fd593babf5a2   5 minutes ago    1.34GB
+<none>                               <none>                                                  d7269f44d139   10 minutes ago   1.34GB
+<none>                               <none>                                                  394d4d1d5d5d   11 minutes ago   1.34GB
+<none>                               <none>                                                  5b198ad1689d   17 minutes ago   1.34GB
+topitservices/dev                    mailExchangeApi.0.1.7                                   a098cc2d812d   13 days ago      327MB
+topitservices/dev                    topbasemailer.0.2.16                                    5afb89bfb021   2 weeks ago      314MB
+topitservices/dev                    mailExchangeApi.0.1.6                                   a497f1204e96   2 weeks ago      327MB
+topitservices/dev                    mailExchangeApi.0.1.5                                   3d224e1804c6   2 weeks ago      327MB
+shortprofilewrapper                  latest                                                  0b5f704b35b8   3 weeks ago      147MB
+<none>                               <none>                                                  7af73bddaea9   3 weeks ago      1.36GB
+shortprofile                         latest                                                  6a557203fb38   3 weeks ago      133MB
+<none>                               <none>                                                  cfb641a56de6   3 weeks ago      1.27GB
+<none>                               <none>                                                  d9b61b4bd390   3 weeks ago      1.27GB
+<none>                               <none>                                                  7a2f3ad2cd24   3 weeks ago      917MB
+<none>                               <none>                                                  85747cdbf9ef   3 weeks ago      1.62GB
+<none>                               <none>                                                  ba98a7aa6e94   3 weeks ago      1.36GB
+<none>                               <none>                                                  f02dce666c40   3 weeks ago      1.27GB
+<none>                               <none>                                                  e46022d8fd01   3 weeks ago      147MB
+<none>                               <none>                                                  349d7101ad54   3 weeks ago      1.36GB
+<none>                               <none>                                                  4f964d65ba80   3 weeks ago      147MB
+<none>                               <none>                                                  dfd2acec7a71   3 weeks ago      1.36GB
+<none>                               <none>                                                  857fa60df011   3 weeks ago      1.36GB
+<none>                               <none>                                                  3dd12d84fd45   3 weeks ago      1.38GB
+<none>                               <none>                                                  a50ab3b9c6f9   3 weeks ago      133MB
+<none>                               <none>                                                  496f3f900e62   3 weeks ago      1.3GB
+<none>                               <none>                                                  63749b2cc56d   3 weeks ago      23MB
+<none>                               <none>                                                  7bbcea5a1c10   3 weeks ago      23MB
+<none>                               <none>                                                  b5af1ab254fb   3 weeks ago      1.3GB
+<none>                               <none>                                                  82a9055f8929   3 weeks ago      1.3GB
+<none>                               <none>                                                  1c2375de4e6c   3 weeks ago      895MB
+webserver                            latest                                                  cdbfd5761114   3 weeks ago      147MB
+<none>                               <none>                                                  62bde7bf523f   3 weeks ago      1.3GB
+topitservices/dev                    topbasemailer.0.2.15                                    7cd7f666270f   3 weeks ago      314MB
+nginx                                alpine                                                  eb9291454164   4 weeks ago      22.6MB
+nginx                                latest                                                  35c43ace9216   4 weeks ago      133MB
+topitservices/dev                    topbasemailer.0.2.14                                    7645c8b93d19   4 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.13                                    3f7fe8decb74   4 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.12                                    0232bc31b907   4 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.11                                    21b6f527b6a0   4 weeks ago      314MB
+topitservices/dev                    mailExchangeApi.0.1.4                                   96817d365ea8   5 weeks ago      327MB
+topitservices/dev                    mailExchangeApi.0.1.3                                   2245ff0982e6   5 weeks ago      327MB
+topitservices/dev                    topbasemailer.0.1.10                                    e66e0f1e4f2b   5 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.10                                    e66e0f1e4f2b   5 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.9                                     9a3c4e1fad2b   6 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.8                                     8dfd105ee7f9   6 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.7                                     695749f8be2b   6 weeks ago      314MB
+topitservices/dev                    jobAgentApi.0.1.6                                       468fc65451e0   6 weeks ago      327MB
+topitservices/dev                    mailExchangeApi.0.1.2                                   c39f6bdf13b1   6 weeks ago      327MB
+topitservices/dev                    topbasemailer.0.2.6                                     2cb0412e95a7   6 weeks ago      314MB
+topitservices/dev                    topbasemailer.0.2.5                                     991203e10b13   6 weeks ago      314MB
+docker/desktop-kubernetes            kubernetes-v1.19.7-cni-v0.8.5-critools-v1.17.0-debian   93b3398dbfde   6 weeks ago      285MB
+topitservices/dev                    topbasemailer.0.2.4                                     f7ceb8bf87ce   6 weeks ago      314MB
+topitservices/dev                    jobAgentApi.0.1.5                                       dd9905abf325   7 weeks ago      327MB
+topitservices/dev                    jobAgentApi.0.1.4                                       56c36f73b83f   7 weeks ago      327MB
+topitservices/dev                    jobAgentApi.0.1.3                                       bb9c60c90cbf   7 weeks ago      327MB
+topitservices/dev                    topbasemailer.0.2.3                                     909e35d8a86f   8 weeks ago      314MB
+topitservices/dev                    mailExchangeApi.0.1.1                                   b66ff521d5a8   8 weeks ago      327MB
+topitservices/dev                    topbasemailer.0.2.2                                     5d5280b64b84   2 months ago     314MB
+topitservices/dev                    topbasemailer.0.2.1                                     49f281981b8d   2 months ago     313MB
+k8s.gcr.io/kube-proxy                v1.19.7                                                 9d368f4517bb   2 months ago     118MB
+k8s.gcr.io/kube-apiserver            v1.19.7                                                 c15e4f843f01   2 months ago     119MB
+k8s.gcr.io/kube-scheduler            v1.19.7                                                 4fa642720eea   2 months ago     45.6MB
+k8s.gcr.io/kube-controller-manager   v1.19.7                                                 67b3bca112d1   2 months ago     111MB
+topitservices/dev                    topbasemailer.0.2.0                                     fa464ed26705   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1.6                                     4f1a3462a173   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1.5                                     ee95a9f18086   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1.4                                     97f48a34e119   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1.3                                     2cdc5c47a83f   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1                                       895c37816146   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1.2                                     895c37816146   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1.1                                     7ba836ef706b   2 months ago     313MB
+topitservices/dev                    topbasemailer.0.1.0                                     1d17b77faf00   3 months ago     313MB
+topitservices/dev                    <none>                                                  497317db344e   3 months ago     313MB
+topitservices/dev                    jobAgentApi.0.1.2                                       aafa980bbff2   4 months ago     327MB
+topitservices/dev                    jobAgentApi.0.1.1                                       11ddf570965f   4 months ago     327MB
+topitservices/dev                    jobAgentApi.0.1.0                                       40840900030d   4 months ago     329MB
+topitservices/dev                    jobAgentApi.0.0.4                                       6d5fb8e82d41   4 months ago     329MB
+topitservices/dev                    jobAgentApi.0.0.3                                       0a48240cdabb   4 months ago     329MB
+topitservices/dev                    jobAgentApi.0.0.2                                       73389c0c27fd   4 months ago     329MB
+topitservices/dev                    jobAgentApi.0.0.1                                       5ec9e48f1bbf   4 months ago     329MB
+topitservices/dev                    mailExchangeApi.0.1.0                                   5ab3cecdd980   4 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.11                                  ae7db3b91cde   4 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.10                                  7387b7dff313   4 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.4                                   16e3b92fa821   4 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.9                                   16e3b92fa821   4 months ago     327MB
+k8s.gcr.io/etcd                      3.4.13-0                                                0369cf4303ff   6 months ago     253MB
+topitservices/dev                    mailExchangeApi.0.0.8                                   603a2c5f31db   7 months ago     327MB
+mailexchange-api                     latest                                                  cdb8f43b3903   7 months ago     327MB
+<none>                               <none>                                                  995bbd06b1b8   7 months ago     327MB
+topitservices/dev                    <none>                                                  7c4db0519476   7 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.5                                   a2cc33963439   7 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.7                                   a2cc33963439   7 months ago     327MB
+topitservices/dev                    <none>                                                  e8e1499ece07   7 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.3                                   80f85475d55d   7 months ago     327MB
+topitservices/dev                    <none>                                                  317a924a362c   7 months ago     327MB
+topitservices/dev                    <none>                                                  db412c65d380   7 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.2                                   8f7b474109ee   8 months ago     327MB
+k8s.gcr.io/coredns                   1.7.0                                                   bfe3a36ebd25   9 months ago     45.2MB
+topitservices/dev                    mailExchangeApi.0.0.1                                   d7c8b7a28864   9 months ago     327MB
+topitservices/dev                    mailExchangeApi.0.0.1.                                  d7c8b7a28864   9 months ago     327MB
+solr                                 8                                                       7d9cd085372d   9 months ago     509MB
+topitservices/dev                    cmsApi.0.1.11                                           ebf0968e1791   10 months ago    301MB
+topitservices/dev                    advertEditorApi.1.5.3                                   4cf22d413fa8   10 months ago    319MB
+topitservices/dev                    advertEditorApi.1.5.2                                   9c95057f2496   10 months ago    319MB
+topitservices/dev                    advertEditorApi.1.5.1                                   71249ded7b76   10 months ago    319MB
+topitservices/dev                    advertEditorApi.1.5.0                                   65716d4ae2bb   10 months ago    319MB
+topitservices/dev                    cmsApi.0.1.10                                           a5b72712e727   10 months ago    301MB
+topitservices/dev                    cmsApi.0.1.9                                            172c701c01e2   10 months ago    301MB
+topitservices/dev                    <none>                                                  6ade429bd744   10 months ago    301MB
+topitservices/dev                    <none>                                                  f807a8f20aa3   10 months ago    301MB
+topitservices/dev                    cmsapi.0.1.8                                            dd10969b1e53   11 months ago    301MB
+topitservices/dev                    cmsapi.0.1.8.                                           dd10969b1e53   11 months ago    301MB
+node                                 12.16.1                                                 88c089733a3b   11 months ago    916MB
+topitservices/dev                    adverteditorapi.1.4.0                                   be3375268373   12 months ago    507MB
+topitservices/dev                    adverteditorapi.1.4.0.                                  be3375268373   12 months ago    507MB
+topitservices/dev                    mailExchangeApi.0.0.6                                   be3375268373   12 months ago    507MB
+adverteditor-api                     latest                                                  be3375268373   12 months ago    507MB
+<none>                               <none>                                                  ba64c2d559ff   12 months ago    507MB
+topitservices/dev                    cmsapi.0.1.7                                            43db9a33edd6   12 months ago    301MB
+topitservices/dev                    cmsapi.0.1.7.                                           43db9a33edd6   12 months ago    301MB
+cmsapi                               latest                                                  43db9a33edd6   12 months ago    301MB
+<none>                               <none>                                                  15e02a51a35b   12 months ago    301MB
+lambci/lambda                        build-java11                                            95c470a55218   13 months ago    1.71GB
+lambci/lambda                        java11                                                  5ed11cd28dc5   13 months ago    421MB
+k8s.gcr.io/pause                     3.2                                                     80d28bedfe5d   13 months ago    683kB
+topitservices/dev                    cmsapi0.1.6                                             49dcb1767681   13 months ago    301MB
+topitservices/dev                    <none>                                                  9302ac8f7ddc   13 months ago    301MB
+<none>                               <none>                                                  a7c6207fffde   13 months ago    301MB
+<none>                               <none>                                                  6c15141b3d45   13 months ago    267MB
+openjdk                              11-jre                                                  8ac20456b277   14 months ago    267MB
+hello-world                          latest                                                  bf756fb1ae65   14 months ago    13.3kB
+openjdk                              12                                                      e1e07dfba89c   19 months ago    470MB
+node                                 10.14.1                                                 75a3a4428e1d   2 years ago      894MB
+ * Serving Flask app "app" (lazy loading)
+ * Environment: production
+   WARNING: Do not use the development server in a production environment.
+   Use a production WSGI server instead.
+ * Debug mode: on
+ * Running on http://0.0.0.0:80/ (Press CTRL+C to quit)
+ * Restarting with stat
+ * Debugger is active!
+ * Debugger PIN: 111-223-251
+[2021-03-22 21:30:34,632] INFO in app: JSON payload:
+{'CHAS': {'0': 0}, 'RM': {'0': 6.575}, 'TAX': {'0': 296.0}, 'PTRATIO': {'0': 15.3}, 'B': {'0': 396.9}, 'LSTAT': {'0': 4.98}}
+[2021-03-22 21:30:34,644] INFO in app: Inference payload DataFrame:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-03-22 21:30:34,652] INFO in app: Scaling Payload:
+   CHAS     RM    TAX  PTRATIO      B  LSTAT
+0     0  6.575  296.0     15.3  396.9   4.98
+[2021-03-22 21:30:34,655] INFO in app: Prediction: [20.35373177134412]
+172.17.0.1 - - [22/Mar/2021 21:30:34] "POST /predict HTTP/1.1" 200 -
+
